@@ -1,10 +1,10 @@
 function Story(props){
     return (
-    <div class="story">
-        <div class="imagem">
+    <div className="story">
+        <div className="imagem">
           <img src={props.image} />
         </div>
-        <div class="usuario">
+        <div className="usuario">
           {props.user}
         </div>
     </div>
@@ -22,9 +22,9 @@ export default function Stories(){
         {image: 'assets/img/memeriagourmet.svg' , user: 'memeriagourmet'},
     ];
     return (
-    <div class="stories">
+    <div className="stories">
         {stories.map( e => (<Story image={e.image} user={e.user}/>) )}
-        <div class="setinha">
+        <div className="setinha">
           <ion-icon name="chevron-forward-circle"></ion-icon>
         </div>
     </div>

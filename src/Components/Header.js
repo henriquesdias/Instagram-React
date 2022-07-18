@@ -6,37 +6,37 @@ function IconsTop(){
       'person-outline'
     ]
     return (
-    <div class="icones">
+    <div className="icones">
         {icons.map( icon => <ion-icon name={icon}></ion-icon>)}
     </div>
     );
 }
 function Logo(){
     return (
-    <div class="logo">
+    <div className="logo">
         <ion-icon name="logo-instagram"></ion-icon>
-        <div class="separador"></div>
+        <div className="separador"></div>
         <img src="assets/img/logo.png" />
     </div>
     );
 }
 function Container(){
     return (
-    <div class="container">
+    <div className="container">
         <Logo />
-        <div class="logo-mobile">
+        <div className="logo-mobile">
             <ion-icon name="logo-instagram"></ion-icon>
         </div>
 
-        <div class="instagram-mobile">
+        <div className="instagram-mobile">
             <img src="assets/img/logo.png" />
         </div>
 
-        <div class="pesquisa">
+        <div className="pesquisa">
             <input type="text" placeholder="Pesquisar" />
         </div>
         <IconsTop />
-        <div class="icones-mobile">
+        <div className="icones-mobile">
             <ion-icon name="paper-plane-outline"></ion-icon>
         </div>
     </div>
@@ -45,7 +45,7 @@ function Container(){
 export default function Header(){
     return (
         <header>
-            <div class="navbar">
+            <div className="navbar">
                 <Container />
             </div>
         </header>

@@ -1,8 +1,8 @@
 function User(props){
     return (
-    <div class="usuario">
+    <div className="usuario">
       <img src={props.image} />
-        <div class="texto">
+        <div className="texto">
             <strong>{props.nameOfUser}</strong>
             {props.user}
         </div>
@@ -11,16 +11,16 @@ function User(props){
 }
 function Suggestions(props){
     return (
-    <div class="sugestao">
-        <div class="usuario">
+    <div className="sugestao">
+        <div className="usuario">
           <img src={props.image} />
-          <div class="texto">
-            <div class="nome">{props.name}</div>
-            <div class="razao">Segue você</div>
+          <div className="texto">
+            <div className="nome">{props.name}</div>
+            <div className="razao">Segue você</div>
           </div>
         </div>
 
-        <div class="seguir">Seguir</div>
+        <div className="seguir">Seguir</div>
     </div>
     );
 }
@@ -48,11 +48,11 @@ export default function SideBar(){
         },
     ];
     return (
-    <div class="sidebar">
+    <div className="sidebar">
         <User image="assets/img/catanacomics.svg" nameOfUser="catanacomics" user="Catana"/>
 
-        <div class="sugestoes">
-          <div class="titulo">
+        <div className="sugestoes">
+          <div className="titulo">
             Sugestões para você
             <div>Ver tudo</div>
           </div>
@@ -63,11 +63,11 @@ export default function SideBar(){
           })}
         </div>
 
-        <div class="links">
+        <div className="links">
           Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma
         </div>
 
-        <div class="copyright">
+        <div className="copyright">
           © 2021 INSTAGRAM DO FACEBOOK
         </div>
     </div>
